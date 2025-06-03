@@ -1,4 +1,4 @@
-const LIST_SERVER = [`http://localhost:8800`];
+const LIST_SERVER = [`https://2025-2026-score-06-be.vercel.app`];
 
 const searchBtn = document.getElementById("search-btn");
 const formUI = document.getElementById("form");
