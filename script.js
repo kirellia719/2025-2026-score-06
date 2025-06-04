@@ -25,7 +25,7 @@ const noti = (result) => {
   if (result) {
     return `<i class="noti">
                Xin chúc mừng thí sinh. <br/>
-               Phụ huynh vui lòng nộp hồ sơ từ ngày 7/6/2025 đến 10/6/2025 nhé
+               Phụ huynh vui lòng nộp hồ sơ từ ngày 6/6/2025 đến 8/6/2025 nhé
             </i>`
   }
   else return ` <i class="noti">~ Rất tiếc, thí sinh chưa trúng tuyển. ~ </i>`
