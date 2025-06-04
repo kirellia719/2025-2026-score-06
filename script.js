@@ -4,16 +4,19 @@ const searchBtn = document.getElementById("search-btn");
 const formUI = document.getElementById("form");
 const wrapper = document.getElementById("wrapper");
 
+const DiemChuan = 16.499;
+
 const MRound = (n) => {
    return Math.round(n * 1000) / 1000;
 };
 
 const showProfile = (info) => {
-   const { math = 0, english = 0, literature = 0, extra = 0, SBD = "", fullname = "", born = "", result } = info;
+   const { math = 0, english = 0, literature = 0, extra = 0, SBD = "", fullname = "", born = "" } = info;
 
    const isAbsence = !math && !english && !literature;
 
    const sum = MRound(extra + math + english + literature);
+   const result = sum >= DiemChuan;
 
    const profile = `
     <div class="profile" id="profile">
@@ -62,7 +65,7 @@ const showProfile = (info) => {
               ${
                  result != null
                     ? `<div class="score" >
-                <div class="value" style="color: ${result ? "green" : "red"}">${
+                <div class="value ${result ? "trung" : "khong"}">${
                          result == true ? "Trúng tuyển" : "Không trúng tuyển"
                       }</div>`
                     : ""
