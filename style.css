@@ -46,6 +46,9 @@ body {
   margin-top: 50px;
   color: #f5ff27;
   padding: 20px;
+  display: flex;
+  gap: .5rem;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 600px) {
@@ -106,16 +109,14 @@ body {
 
 .wrapper {
   overflow: hidden;
-  background-color: #fff;
   width: 500px;
   max-width: 90%;
-  border-radius: 6px;
   display: flex;
   justify-content: center;
+  padding: 5px;
 }
 
 .wrapper>* {
-  padding: 20px;
   transition: .4s;
 }
 
@@ -124,51 +125,6 @@ body {
   overflow: hidden;
 }
 
-.profile {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  transition: .4s;
-  transition-delay: .5s;
-}
-
-.line {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.title {
-  font-weight: 600;
-}
-
-.score {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  margin: 0 1rem 5px 0;
-}
-
-.score .value {
-  border-radius: 1000px;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: .5rem 1rem;
-}
-
-.value.trung {
-  color: white;
-  background-color: rgb(39, 162, 43);
-}
-
-.value.khong {
-  color: white;
-  background-color: rgb(211, 36, 36);
-}
-
-.sum {
-  font-size: 1.2rem;
-}
 
 @media only screen and (max-width: 600px) {
   .sum {
@@ -196,4 +152,11 @@ body {
   to {
     transform: rotate(1turn)
   }
+}
+
+.lop {
+  padding: .25rem 1rem;
+  border-radius: 1000px;
+  background-color: rgb(249, 247, 238);
+  color: rgb(225, 105, 252);
 }
