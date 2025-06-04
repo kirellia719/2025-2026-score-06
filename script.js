@@ -8,7 +8,7 @@ const MRound = (n) => {
   return Math.round(n * 1000) / 1000;
 };
 
-const DiemChuan = 17.5;
+const DiemChuan = 16.49;
 
 const ribbon = (result) => {
   if (result) {
