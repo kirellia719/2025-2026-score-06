@@ -161,6 +161,11 @@ body {
   background-color: rgb(39, 162, 43);
 }
 
+.value.khong {
+  color: white;
+  background-color: rgb(211, 36, 36);
+}
+
 .sum {
   font-size: 1.2rem;
 }
