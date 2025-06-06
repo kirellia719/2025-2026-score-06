@@ -160,3 +160,7 @@ body {
   background-color: rgb(249, 247, 238);
   color: rgb(225, 105, 252);
 }
+
+.line-through {
+  text-decoration: line-through;
+}
