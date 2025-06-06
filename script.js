@@ -62,7 +62,7 @@ const showProfile = (info) => {
                <div class="subject-group">
                   <div class="subject">
                      <div class="score">${MRound(literature)}</div>
-                     <div class="subname">Tiềng Việt</div>
+                     <div class="subname">Tiếng Việt</div>
                   </div>
                   <div class="subject">
                      <div class="score">${MRound(math)}</div>
